@@ -5,6 +5,7 @@ html {
   border: 0;
 } 
 
+
 .header__cadastro {
   color: #C7008F;
   background-color: #FDE4FA;
@@ -21,7 +22,7 @@ nav h1 {
   margin: 0 auto;
   font-family: "Comic Neue", cursive;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 nav {
@@ -99,12 +100,14 @@ form {
 #bloco__somos {
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   align-self: center;
   background-color: #f6f2d5;
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
+  height: 200px;
 }
 
 .cadastro__main img {
