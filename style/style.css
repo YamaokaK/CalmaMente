@@ -11,6 +11,12 @@ html {
   border-radius: 30px;
 }  
 
+.header__login {
+  background-color: #D3F7FF;
+  color: #0093B4;
+  border-radius: 30px;
+}
+
 nav h1 {
   margin: 0 auto;
   font-family: "Comic Neue", cursive;
@@ -43,13 +49,19 @@ h3 {
   color: #000000;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.cadastro__main{
+.cadastro__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,10 +69,10 @@ form{
 
 .pag__inicial {
   
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .bloco__inicio {
@@ -75,12 +87,15 @@ form{
 #bloco__ansiedade {
   background-color: #fae9f5;
 }
+
 #bloco__tdah {
   background-color: #dff0d9;
 }
+
 #bloco__depressao {
   background-color: #e9eafa;
 }
+
 #bloco__somos {
   justify-content: center;
   display: flex;
@@ -94,6 +109,12 @@ form{
 
 .cadastro__main img {
   border: solid 4px #C7008F;
+  border-radius: 25px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.login__main img {
+  border: solid 4px #006A82;
   border-radius: 25px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -128,6 +149,11 @@ input {
 #cadastre {
   color: #FAFAFA;
   background-color: #C7008F;
+}
+
+#login {
+  color: #FAFAFA;
+  background-color: #006A82;
 }
 
 .button:hover {
