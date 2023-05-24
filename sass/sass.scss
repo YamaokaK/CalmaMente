@@ -1,28 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-html{
-    background-color: #FAFAFA;
-    margin: 0;
-    border: 0;
-}
-
-nav h1{
-    color: #0093B4;
-    font-family: 'Comic Neue', cursive;
-    font-weight: 700;
-    font-size: 2em;
-    
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    background-color: #D3F7FF;
-    border-radius: 30px;
-    box-shadow: 0 3px rgba(0, 0, 0, 0.153);
-}
-
 $fuschia: #4cc0da;
 $button-bg: $fuschia;
 $button-text-color: #fff;
