@@ -22,10 +22,45 @@ nav {
 }
 
 body {
-  font-size: 16px;
+  font-size: 32px;
   font-family: "Helvetica", "Arial", sans-serif;
   text-align: center;
-  background-color: #f8faff;
+  background-color: #FAFAFA;
+}
+
+h3 {
+  font-family: "Comic Neue", cursive;
+  color: #000000;
+}
+
+.pag__inicial {
+  width: 1440px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.bloco__inicio {
+  width: 430px;
+  height: 380px;
+  margin: 25px;
+  border-radius: 50px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+#bloco__ansiedade {
+  background-color: #fae9f5;
+}
+#bloco__tdah {
+  background-color: #dff0d9;
+}
+#bloco__depressao {
+  background-color: #e9eafa;
+}
+#bloco__somos {
+  background-color: #f6f2d5;
 }
 
 .bubbly-button {
