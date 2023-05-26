@@ -1,36 +1,142 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+/* Cores do header */
+:root {
+  --color-1: #FDE4FA;   /* roxinho ansiedade */
+  --color-2: #D3F7FF;  /*azulzinho HOME*/
+  --color-3: #DFF0D9; /*verdinho TDAH */
+  --color-4: #FFA85766; /*amarelinho exercicio*/
+  --color-5: #E9EAFA; /*azul depressão*/
+  --color-5: #F6F2D5; /*amarelo QUEM SOMOS*/
+}
+
+
 html {
   background-color: #FAFAFA;
   margin: 0;
-  border: 0;
+  border: 0; 
 } 
+
+/* Menu burger */
+
+.menu-button {
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bar {
+  margin-left: 30px;
+  width: 100%;
+  height: 3px;
+  background-color: #b98585;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* mudando o hamburg
+ */
+#menu-toggle:checked ~ .menu-button .bar:nth-child(2) {
+  transform: scale(0);
+}
+
+#menu-toggle:checked ~ .menu-button .bar:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-button .bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+
+#menu-toggle:checked ~ .menu {
+  display: block;
+}
+#menu-toggle {
+  display: none;
+}
+
+/* ///////// */
+
 
 .cadastro__header {
   color: #C7008F;
-  background-color: #FDE4FA;
+  background-color: var(--color-1);
   border-radius: 30px;
 }  
 
 .login__header {
-  background-color: #D3F7FF;
+  background-color: var(--color-2);
   color: #0093B4;
   border-radius: 30px;
 }
 
 .newpwd__header {
-  background-color: #D3F7FF;
+  background-color: var(--color-2);
   color: #0093B4;
   border-radius: 30px;
 }
 
 nav h1 {
+  align-self: center;
   margin: 0 auto;
   font-family: "Comic Neue", cursive;
   font-weight: 700;
   font-size: 1.5em;
 }
 
+nav a{
+  text-decoration: none;
+  margin-right: 3%;
+}
+
+nav button{
+  color: #005D72;
+  background-color: #44DDFF;
+  font-size: large;
+  font-family: "Comic Neue", cursive;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.181);
+
+}
+
 nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,10 +145,14 @@ nav {
 }
 
 .nav__home {
-  background-color: #D3F7FF;
+  background-color: var(--color-2);
   color: #0093B4;
 }
 
+.nav__main__depressao{
+  background-color: var(--color-1);
+  color: ;
+}
 body {
   font-size: 32px;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -159,7 +269,7 @@ input {
   height: 50px;
   padding: 10px;
   font-size: 24px;
-  font-family: "Comic Neue", cursive;;
+  font-family: "Comic Neue", cursive;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -213,4 +323,43 @@ input {
 }
 
 
+/* Codigo das paginas principais */
+.artigos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 5%;
+}
+.botao__ajuda{
+  width: 20%;
+  margin-top: 30px;
+  background-color: #FF00008F;
+  font-family: "Comic Neue", cursive;
+  font-size: 20px;
+  padding: 14px 20px;
+  color: #A70000;
+  border: none;
+  border-radius: 37px;
+}
 
+.informacao{
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.topicos__artigos{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  border: 2px solid white;
+  border-radius: 200px;
+  overflow: hidden;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.204);
+}
