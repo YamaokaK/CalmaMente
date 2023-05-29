@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmaMente</title>
+    <link rel="stylesheet" href="sass.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav__respiracao">  
+            <img src="../img/logo1.png" width="100" alt="logo">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button">   
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ansiedade.html">Ansiedade</a></li>
+                <li><a href="main1.html">Depressão</a></li>
+                <li><a href="tdah.html">TDAH</a></li>
+                <li><a href="#">Contate-nos</a></li>
+            </ul>
+            <h1>CalmaMente</h1>
+            <a href="login.html"><button>Login</button></a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="main__ajuda">
+                <div>
+                    <button class="tab" onclick="openTab(event, 'respiracao')">
+                        <img src="../img/respiracao.png" width="90" alt="imagem de uma pessoa respirando">
+                        Exercício de Respiração
+                    </button>
+                </div>
+                <div>
+                    <button class="tab" onclick="openTab(event, 'cards')">
+                        <img src="../img/distracao.png"  width="90" alt="uma pessoa com cerebro confuso">
+                        Distraia a sua mente
+                    </button>
+                </div>
+            </div>
+            <div id="respiracao" class="content">
+                <div class="main__respiracao">
+                    <h4>Mantenha a calma</h4>
+                    <div class="container">
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="mensagem">Inspire</div>
+                    <button onclick="iniciarExercicio()">Iniciar</button>
+                </div>
+            
+            </div>
+        
+            <div id="cards" class="content">
+            <!-- Conteúdo da sessão de cards -->
+            <div class="card">
+                <img src="imagem1.jpg" alt="Imagem 1">
+                <h3>Título do Card 1</h3>
+                <p>Descrição do Card 1</p>
+            </div>
+            <div class="card">
+                <img src="imagem2.jpg" alt="Imagem 2">
+                <h3>Título do Card 2</h3>
+                <p>Descrição do Card 2</p>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <h2 class="textContact">Contate-nos!</h2>
+        <div class="flex-footer">
+            <h3 class="textF"><a href="">Instagram</a></h3>
+            <h3 class="textF"><a href="">Facebook</a></h3>
+            <h3 class="textF"><a href="">Twitter</a></h3>
+        </div>
+    </footer>
+</body>
+</html>
