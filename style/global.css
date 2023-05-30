@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+/* Cores do header */
+:root {
+  --color-1: #FDE4FA;   /* roxinho ansiedade */
+  --color-2: #D3F7FF;  /*azulzinho HOME*/
+  --color-3: #DFF0D9; /*verdinho TDAH */
+  --color-4: #FFA85766; /*amarelinho exercicio*/
+  --color-5: #e9eafa; /*azul depressão*/
+  --color-5: #F6F2D5; /*amarelo QUEM SOMOS*/
+  --val-size: 8px;
+  --drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --light-blue: #D3F7FF;
+  --light-blue-text: #0093B4;
+  --blue: #44DDFF;
+  --blue-text: #005D72;
+  --light-pink: rgba(255, 0, 184, 0.1);
+  --light-pink-text: #C7008F;
+  --pink: rgba(255, 99, 239, 0.6);
+  --pink-text: #98006D;
+  --light-green: rgba(83, 187, 47, 0.3);
+  --dark-blue-light: rgba(0, 26, 255, 0.2);
+  --light-yellow: rgba(227, 210, 57, 0.3);
+  --light-red: rgba(255, 0, 0, 0.6);
+  --light-red-text: #A70000;
+}
+
+
+html {
+  background-color: #FAFAFA;
+  margin: 0;
+  border: 0; 
+} 
+
+body {
+    font-size: 32px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+header {
+    border-radius: 30px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.153);
+}
+
+nav h1 {
+    align-self: center;
+    margin: 0 auto;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+nav button{
+    font-size: large;
+    font-family: "Comic Neue", cursive;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.181);
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 3%;
+}
+  
+
+/* Menu burger */
+
+.menu-button {
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bar {
+    margin-left: 30px;
+    width: 100%;
+    height: 3px;
+    /* background-color: #b98585; */
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* mudando o hamburg*/
+
+#menu-toggle:checked ~ .menu-button .bar:nth-child(2) {
+    transform: scale(0);
+}
+  
+#menu-toggle:checked ~ .menu-button .bar:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+  
+#menu-toggle:checked ~ .menu-button .bar:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+  
+.menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+  
+.menu li {
+    margin: 10px 0;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.menu a:hover {
+    background-color: #ddd;
+}
+    
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+#menu-toggle {
+    display: none;
+}
+  
+/* ///////// */
+
+h3 {
+    font-family: "Comic Neue", cursive;
+    color: #000000;
+}
+
+input {
+    padding: 10px;
+    font-size: 28px;
+    font-family: "Comic Neue", cursive;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #D3F7FF;
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textF {
+  margin: 8px;
+}
+
+.rodape a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.flex-footer {
+  display: flex;
+  flex-direction: row;
+}

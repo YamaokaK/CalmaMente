@@ -1,0 +1,7 @@
+@import url(global.css);
+
+header {
+    color: var(--light-pink-text);
+    background-color: var(--light-pink);
+    border-radius: 30px;
+  } 
