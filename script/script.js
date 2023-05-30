@@ -61,11 +61,11 @@ var animateButton = function(e) {
 
             contador++;
             if (contador < totalVoltas) {
-              setTimeout(animarRespiracao, 4000); // Tempo de transição entre expiração e inspiração
+              setTimeout(animarRespiracao, 2000); // Tempo de transição entre expiração e inspiração
             }
-          }, 4000); // Tempo de transição entre inspiração e retenção
-        }, 4000); // Tempo de retenção da respiração
-      }, 4000); // Tempo de transição entre inspiração e retenção
+          }, 5000); // Tempo de transição entre inspiração e retenção
+        }, 2000); // Tempo de retenção da respiração
+      }, 6000); // Tempo de transição entre inspiração e retenção
     }
 
     animarRespiracao();

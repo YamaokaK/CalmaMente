@@ -243,7 +243,7 @@ form {
 }
 
 .cadastro__main img {
-  border: solid 4px #C7008F;
+  border: solid 4px var(--light-pink-text);
   border-radius: 25px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -287,7 +287,7 @@ input {
   transition: box-shadow 0.3s ease;
 }
 
-#cadastre {
+#btn_cadastre {
   color: #FAFAFA;
   background-color: #C7008F;
 }

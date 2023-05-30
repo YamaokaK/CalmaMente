@@ -60,5 +60,5 @@ nav h1 {
   
 
 .rodape {
-    background-color: #D3F7FF;
+    background-color: var(--light-blue);
 }
