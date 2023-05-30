@@ -1,0 +1,43 @@
+@import url(global.css);
+
+header {
+    background-color: var(--light-blue);
+}
+
+nav button{
+    color: var(--blue-text);
+    background-color: var(--blue);
+}
+
+nav h1 {
+    color: var(--light-blue-text);
+}
+
+.bar {
+    background-color: var(--light-blue-text);
+}
+
+.newpwd__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newpwd__main img {
+    border: solid 4px #5CE1E6;
+    border-radius: 25px;
+    box-shadow: var(--drop-shadow);
+}
+
+#btn_newpwd {
+    color: #FAFAFA;
+    background-color: #5CE1E6;
+}
+
+.button:hover {
+    box-shadow: inset -10px 0px 10px 50px rgba(233, 192, 245, 0.5);
+}
+
+.rodape {
+    background-color: var(--light-blue);
+}

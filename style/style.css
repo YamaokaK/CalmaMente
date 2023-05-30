@@ -292,12 +292,12 @@ input {
   background-color: #C7008F;
 }
 
-#login {
+#btn_login {
   color: #FAFAFA;
   background-color: #006A82;
 }
 
-#newpwd {
+#btn_newpwd {
   color: #FAFAFA;
   background-color: #5CE1E6;
 }
