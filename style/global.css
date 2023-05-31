@@ -47,6 +47,10 @@ header {
     border-radius: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     position: relative;
     display: flex;
@@ -74,7 +78,6 @@ nav button{
 }
 
 nav a{
-    text-decoration: none;
     margin-right: 3%;
 }
   
@@ -132,7 +135,6 @@ nav a{
 }
   
 .menu a {
-    text-decoration: none;
     color: #000;
     display: block;
     padding: 10px 20px;
@@ -205,7 +207,7 @@ input {
     box-shadow: var(--drop-shadow);
 }
 
-.rodape {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -17,30 +17,8 @@ nav h1 {
     background-color: var(--yellow-text);
 }
 
-.quemsomos__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quemsomos__main img {
-    border: solid 4px var(--light-blue-text);
-    border-radius: 25px;
-    box-shadow: var(--drop-shadow);
-}
-
-.button:hover {
-    box-shadow: inset -10px 0px 10px 50px rgba(233, 192, 245, 0.5);
-}
-
-.rodape {
-    background-color: var(--light-yellow);
-}
-
-.quemsomos__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main_flex_center img {
+    border-color: var(--light-blue-text);
 }
 
 .bloco__quemsomos {
@@ -75,13 +53,17 @@ nav h1 {
     background-color: var(--light-green);
     color: #085B16;
 }
-  
+
 .valores{
     background-color: var(--dark-blue-light);
     color: var(--dark-blue-light-text);
 }
-  
+
 .equipe{
     background-color: #FAE9F5;
     color: #98006D;
+}
+
+.footer {
+    background-color: var(--light-yellow);
 }
