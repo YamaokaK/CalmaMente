@@ -193,6 +193,18 @@ input {
     width: 300px;
 }
 
+.main_flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_flex_center img {
+    border: solid 4px;
+    border-radius: 25px;
+    box-shadow: var(--drop-shadow);
+}
+
 .rodape {
   display: flex;
   flex-direction: column;
