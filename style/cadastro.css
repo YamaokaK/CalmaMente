@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url(variaveis.css);
 
 header {
     color: var(--light-pink-text);
@@ -23,16 +23,8 @@ nav h1 {
     background: var(--light-pink-text);
 }
 
-.cadastro__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main_flex_center img {
-    border: solid 4px #C7008F;
-    border-radius: 25px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+.flex_center img {
+    border-color: var(--pink-text);
 }
 
 .btn:hover {

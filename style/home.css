@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url(variaveis.css);
 
 header {
     background-color: var(--light-blue);
@@ -22,15 +22,6 @@ nav h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-  
-.bloco__inicio {
-    width: 430px;
-    height: 380px;
-    margin: 25px;
-    border-radius: 50px;
-    box-shadow: var(--drop-shadow);
-    overflow: hidden;
 }
   
 #bloco__ansiedade {

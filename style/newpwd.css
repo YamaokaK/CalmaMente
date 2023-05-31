@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url(variaveis.css);
 
 header {
     background-color: var(--light-blue);
@@ -17,7 +17,7 @@ nav h1 {
     background-color: var(--light-blue-text);
 }
 
-.main_flex_center img {
+.flex_center img {
     border-color: #5CE1E6;
 }
 

@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url(variaveis.css);
 
 header {
     background-color: var(--light-yellow);
@@ -17,41 +17,30 @@ nav h1 {
     background-color: var(--yellow-text);
 }
 
-.main_flex_center img {
+.flex_center img {
     border-color: var(--light-blue-text);
 }
 
-.bloco__quemsomos {
+.bloco_quemsomos {
     background-color: #FFFFFF;
-    width: 430px;
-    height: 380px;
-    margin: 25px;
-    border-radius: 50px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
 }
 
-.bloco__conteiner {
+.containerQS {
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 430px;
-    height: 380px;
-    margin: 25px;
-    border-radius: 50px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
-    overflow: hidden;
+    box-shadow: none;
 }
 
 .missao{
     background-color: var(--light-yellow);
-    color: #7E7C03;
+    color: var(--yellow-text);
 }
 
 .visao{
     background-color: var(--light-green);
-    color: #085B16;
+    color: var(--green-text);
 }
 
 .valores{

@@ -1,34 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+@import url(variaveis.css);
 
-/* Cores do header */
-:root {
-  /* --color-1: #FDE4FA; roxinho ansiedade 
-  --color-2: #D3F7FF;  azulzinho HOME
-  --color-3: #DFF0D9; verdinho TDAH 
-  --color-4: #FFA85766; amarelinho exercicio
-  --color-5: #e9eafa; azul depressão*
-  --color-6: #F6F2D5; amarelo QUEM SOMOS */
-  --val-size: 8px;
-  --drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --light-blue: #D3F7FF;
-  --light-blue-text: #0093B4;
-  --blue: #44DDFF;
-  --blue-text: #005D72;
-  --light-pink: rgba(255, 0, 184, 0.1);
-  --light-pink-text: #C7008F;
-  --pink: rgba(255, 99, 239, 0.6);
-  --pink-text: #98006D;
-  --light-green: rgba(83, 187, 47, 0.3);
-  --dark-blue-light: rgba(0, 26, 255, 0.2);
-  ----dark-blue-light-text: #006A82;
-  --light-yellow: rgba(227, 210, 57, 0.3);
-  --light-red: rgba(255, 0, 0, 0.6);
-  --light-red-text: #A70000;
-  --light-yellow: #F6F2D5;
-  --yellow-text: #7E7C03;
-  --yellow: #FFFE66;
+* {
+    font-family: 'Comic Neue', cursive;
 }
-
 
 html {
   background-color: #FAFAFA;
@@ -38,7 +13,6 @@ html {
 
 body {
     font-size: 32px;
-    font-family: "Helvetica", "Arial", sans-serif;
     text-align: center;
     background-color: #FAFAFA;
 }
@@ -49,6 +23,7 @@ header {
 
 a {
     text-decoration: none;
+    color:#000000;
 }
 
 nav {
@@ -63,14 +38,12 @@ nav {
 nav h1 {
     align-self: center;
     margin: 0 auto;
-    font-family: "Comic Neue", cursive;
     font-weight: 700;
     font-size: 1.5em;
 }
 
 nav button{
     font-size: large;
-    font-family: "Comic Neue", cursive;
     padding: 10px 50px;
     border: none;
     border-radius: 50px;
@@ -99,7 +72,6 @@ nav a{
     margin-left: 30px;
     width: 100%;
     height: 3px;
-    /* background-color: #b98585; */
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -135,7 +107,6 @@ nav a{
 }
   
 .menu a {
-    color: #000;
     display: block;
     padding: 10px 20px;
     transition: background-color 0.3s ease-in-out;
@@ -155,9 +126,13 @@ nav a{
   
 /* ///////// */
 
-h3 {
-    font-family: "Comic Neue", cursive;
-    color: #000000;
+.bloco_size {
+    width: 430px;
+    height: 380px;
+    margin: 25px;
+    border-radius: 50px;
+    box-shadow: var(--drop-shadow);
+    overflow: hidden;
 }
 
 form {
@@ -195,16 +170,28 @@ input {
     width: 300px;
 }
 
-.main_flex_center {
+.flex_center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main_flex_center img {
+.flex_row {
+    flex-direction: row;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.flex_center img {
     border: solid 4px;
     border-radius: 25px;
     box-shadow: var(--drop-shadow);
+}
+
+.no_shadow {
+    box-shadow: none;
 }
 
 .footer {
@@ -212,7 +199,6 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #D3F7FF; */
   margin-top: 30px;
   width: 100%;
   height: 200px;
@@ -223,11 +209,9 @@ input {
   margin: 8px;
 }
 
-.rodape a {
-  text-decoration: none;
+.footer a {
   color: #000000;
 }
-
 
 .flex-footer {
   display: flex;
