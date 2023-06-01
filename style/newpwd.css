@@ -17,16 +17,8 @@ nav h1 {
     background-color: var(--light-blue-text);
 }
 
-.newpwd__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.newpwd__main img {
-    border: solid 4px #5CE1E6;
-    border-radius: 25px;
-    box-shadow: var(--drop-shadow);
+.main_flex_center img {
+    border-color: #5CE1E6;
 }
 
 #btn_newpwd {
@@ -34,10 +26,10 @@ nav h1 {
     background-color: #5CE1E6;
 }
 
-.button:hover {
+.btn:hover {
     box-shadow: inset -10px 0px 10px 50px rgba(233, 192, 245, 0.5);
 }
 
-.rodape {
+.footer {
     background-color: var(--light-blue);
 }

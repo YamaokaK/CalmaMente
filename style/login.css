@@ -17,16 +17,8 @@ nav h1 {
     background-color: var(--light-blue-text);
 }
 
-.login__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login__main img {
-    border: solid 4px var(--light-blue-text);
-    border-radius: 25px;
-    box-shadow: var(--drop-shadow);
+.main_flex_center img {
+    border-color: var(--blue-text);
 }
 
 #btn_login {
@@ -34,11 +26,11 @@ nav h1 {
     background-color: var(--light-blue-text);
 }
 
-.button:hover {
+.btn:hover {
     box-shadow: inset -10px 0px 10px 50px rgba(233, 192, 245, 0.5);
 }
 
 
-.rodape {
+.footer {
     background-color: var(--light-blue);
 }
