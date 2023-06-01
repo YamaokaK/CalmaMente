@@ -145,9 +145,8 @@ form {
 input {
     padding: 10px;
     font-size: 28px;
-    font-family: "Comic Neue", cursive;
     border: none;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--drop-shadow);
 }
 
 .btn {
@@ -207,10 +206,6 @@ input {
 
 .textF {
   margin: 8px;
-}
-
-.footer a {
-  color: #000000;
 }
 
 .flex-footer {
