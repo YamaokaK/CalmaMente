@@ -396,16 +396,18 @@ input {
   background-color: #ffffff;
   border-radius: 25px;
   border: none;
-  box-shadow: 0 2px #000000a3;
+  box-shadow: var(--drop-shadow);
   outline: none;
   transition: background-color 0.3s;
 }
 
 .tab:hover {
+  color: var(--yellow);
   background-color: #FFA857;
 }
 
 .active {
+  color: var(--yellow);
   background-color: #FFA857;
 }
 

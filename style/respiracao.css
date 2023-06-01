@@ -1,0 +1,46 @@
+@import url(global.css);
+@import url(style.css);
+
+header {
+    color: var(--laranja-escuro);
+    background-color: var(--laranja-claro);
+}
+
+nav button{
+    color: var(--laranja-escuro);
+    background-color: var(--laranja);
+}
+
+nav h1 {
+    color: varvar(--laranja);
+}
+
+.bar {
+    background-color: var(--laranja);
+}
+
+#btn_respiracao {
+    height: auto;
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    box-shadow: var(--drop-shadow);
+    background-color: var(--laranja);
+    color: var(--yellow);
+}
+
+#btn_respiracao:hover {
+    color: var(--laranja);
+    background-color: var(--yellow);
+}
+
+h4 {
+    color: var(--laranja);
+}
+
+.mensagem {
+    color: var(--laranja);
+}

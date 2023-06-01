@@ -32,7 +32,7 @@
         mensagem.textContent = 'Segure';
 
         setTimeout(function() {
-          mensagem.textContent = 'Expire..';
+          mensagem.textContent = 'Expire...';
           circulo.classList.remove('expandir');
           circulo.classList.add('retrair');
 
