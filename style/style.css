@@ -357,12 +357,15 @@ input {
 
 .informacao{
   width: 50%;
+  padding: 30px;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 2px solid white;
-  border-radius: 20px;
+  border-radius: 30px;
+  box-shadow: var(--drop-shadow);
+
 }
 
 .topicos__artigos{
@@ -375,7 +378,6 @@ input {
   overflow: hidden;
   box-shadow: 0 2px rgba(0, 0, 0, 0.204);
 }
-
 
 /* ----------------------------------------------------- */
 

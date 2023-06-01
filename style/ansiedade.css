@@ -1,6 +1,39 @@
 @import url(global.css);
 @import url(style.css);
 
+header {
+    background-color: var(--light-pink-text);
+}
+
+nav button{
+    color: var(--light-pink-text);
+    background-color: var(--pink);
+}
+
+nav h1 {
+    color: var(--light-pink-text);
+}
+
+.bar {
+    background-color: var(--light-pink-text);
+}
+
+.main_flex_center img {
+    border-color: #5CE1E6;
+}
+
+.informacao h2 {
+    color: var(--light-pink-text);
+}
+
+p {
+    color: #222222;
+    text-align: justify;
+    line-height: 150%;
+}
+
+
+
 .container__modal {
     font-family: "Comic Neue", cursive;
     width: 100vw;
