@@ -1,0 +1,24 @@
+Global: 
+
+mudar cabeçalho:
+contate-nos! (fonte e cor)
+Instagram Facebook Twitter (icon)
+Mudar o icone do hamburguer para lado direito (canto)
+Mudar a cor da fonte do hamburguer por categoria, exemplo Ansiedade Rosa, Tdah verde...)
+Fazer o logo ser linkavel para index.
+Fazer hover botão de ajuda
+
+Index:
+
+Cores dos cards
+Quem Somos: img cerebro (tamanho)
+
+Ansiedade:
+
+Fazer o modal aparecer só quando chamado
+Fazer modal ficar centralizado
+
+
+
+
+

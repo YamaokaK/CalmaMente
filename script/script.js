@@ -1,21 +1,3 @@
-var animateButton = function(e) {
-
-    e.preventDefault;
-    //reset animation
-    e.target.classList.remove('animate');
-    
-    e.target.classList.add('animate');
-    setTimeout(function(){
-      e.target.classList.remove('animate');
-    },700);
-  };
-  
-  var bubblyButtons = document.getElementsByClassName("bubbly-button");
-  
-  for (var i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('click', animateButton, false);
-  }
-
   //respiração aqui em baixo
   function openTab(event, tabName) {
     var i, contents, tabs;
@@ -50,7 +32,7 @@ var animateButton = function(e) {
         mensagem.textContent = 'Segure';
 
         setTimeout(function() {
-          mensagem.textContent = 'Expire..';
+          mensagem.textContent = 'Expire...';
           circulo.classList.remove('expandir');
           circulo.classList.add('retrair');
 
@@ -71,4 +53,31 @@ var animateButton = function(e) {
     animarRespiracao();
   }
   
+// modal
 
+var modal = document.getElementById("ModalIDl");
+
+// Get the buttons that open the modal
+var artigos = document.getElementsByClassName("topicos__artigos");
+
+// Get the <button> element that closes the modal
+var btn = document.querySelector(".fechar");
+
+// When the user clicks on an artigo, open the modal
+for (var i = 0; i < artigos.length; i++) {
+  artigos[i].onclick = function() {
+    modal.style.display = "block";
+  };
+}
+
+// When the user clicks on the button (x), close the modal
+btn.onclick = function() {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
