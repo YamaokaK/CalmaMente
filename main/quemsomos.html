@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - CalmaMente</title>
+    <title>CalmaMente</title>
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/cadastro.css">
+    <link rel="stylesheet" href="../style/quemsomos.css">
     <script src="../script/script.js" defer></script>
 </head>
+
+
 <body>
-    <header class="cadastro__header">
+
+    <header class="quemsomos__header">
         <nav>  
             <img src="../img/logo1.png" width="100" alt="logo">
             <input type="checkbox" id="menu-toggle">
@@ -21,29 +25,36 @@
             </label>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="ansiedade.html">Ansiedade</a></li>
+                <li><a href="#">Ansiedade</a></li>
                 <li><a href="main1.html">Depressão</a></li>
-                <li><a href="tdah.html">TDAH</a></li>
+                <li><a href="#">TDAH</a></li>
                 <li><a href="#">Contate-nos</a></li>
             </ul> 
-            <h1>Cadastro</h1>
-            <a href="login.html"><button>Login</button></a>         
+            <h1>Quem somos</h1>
+            <a href="login.html"><button>Login</button></a>          
         </nav>
     </header>
+
+
     <main>
-        <div class="cadastro__main">
-            <figure>
-                <img src="/img/cadastro__img.jpeg" width="400" alt="comemorando">
-            </figure>
-        <form>
-            <input type="text" name="nome" id="nome__cadastro" placeholder="Nome">
-            <input type="email" name="email" id="email__cadastro" placeholder="Email">
-            <input type="tel" name="celular" id="cel__cadastro" placeholder="Celular">
-            <input type="password" name="password" id="pwd__cadastro" placeholder="Senha">
-            <button class="button" id="btn_cadastre">Cadastre-se</button>            
-        </form>
+        <div class="quemsomos__main">
+            <div class="bloco__quemsomos" id="bloco__quemsomos>
+                <figure>
+                    <img src="" width="400">
+                </figure>
+            </div>
+            <div class="bloco__conteiner" id="bloco__quemsomos>
+                <div class="button-container">
+                    <button class="button-missao" id="button-missao">Missão</button> 
+                    <button class="button-visao" id="button-visao">Visão</button>
+                    <button class="button-valores" id="button-valores">Valores</button>
+                    <button class="button-equipe" id="button-equipe">Equipe</button> 
+                </div>          
+            </div>
         </div>
     </main>
+
+
     <footer class="rodape">
         <h2 class="textContact">Contate-nos!</h2>
         <div class="flex-footer">
@@ -52,5 +63,8 @@
             <h3 class="textF"><a href="">Twitter</a></h3>
         </div>
     </footer>
+
 </body>
+
+
 </html>

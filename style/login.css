@@ -1,0 +1,44 @@
+@import url(global.css);
+
+header {
+    background-color: var(--light-blue);
+}
+
+nav button{
+    color: var(--blue-text);
+    background-color: var(--blue);
+}
+
+nav h1 {
+    color: var(--light-blue-text);
+}
+
+.bar {
+    background-color: var(--light-blue-text);
+}
+
+.login__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__main img {
+    border: solid 4px var(--light-blue-text);
+    border-radius: 25px;
+    box-shadow: var(--drop-shadow);
+}
+
+#btn_login {
+    color: #FAFAFA;
+    background-color: var(--light-blue-text);
+}
+
+.button:hover {
+    box-shadow: inset -10px 0px 10px 50px rgba(233, 192, 245, 0.5);
+}
+
+
+.rodape {
+    background-color: var(--light-blue);
+}
