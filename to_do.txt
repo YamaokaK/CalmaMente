@@ -1,12 +1,14 @@
 Global: 
 
 mudar cabeçalho:
-contate-nos! (fonte e cor)
-Instagram Facebook Twitter (icon)
-Mudar o icone do hamburguer para lado direito (canto)
 Mudar a cor da fonte do hamburguer por categoria, exemplo Ansiedade Rosa, Tdah verde...)
 Fazer o logo ser linkavel para index.
 Fazer hover botão de ajuda
+
+mudar no rodapé:
+
+contate-nos! (fonte e cor)
+Instagram Facebook Twitter (icon)
 
 Index:
 
