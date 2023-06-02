@@ -21,15 +21,6 @@ nav h1 {
     color: var(--dark-blue-light-text);
 }
 
-.conteudo {
-    max-height: 80vh;
-    overflow-y: scroll;
-    text-align: justify;
-    margin: 20px;
-    padding: 20px;
-
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }

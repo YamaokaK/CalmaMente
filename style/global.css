@@ -233,6 +233,15 @@ input {
     margin: 85px auto;
 }
 
+.conteudo {
+    max-height: 80vh;
+    overflow-y: scroll;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+
+}
+
 .fechar {
     position: absolute;
     top: 0px;
@@ -249,13 +258,13 @@ input {
 .botao__ajuda{
     width: 20%;
     margin-top: 30px;
-    background-color: #FF00008F;
-    font-family: "Comic Neue", cursive;
+    background-color: var(--light-red);
     font-size: 20px;
     padding: 14px 20px;
-    color: #A70000;
+    color: var(--light-red-text);
     border: none;
     border-radius: 37px;
+    box-shadow: var(--drop-shadow);
 }
 
 .informacao{
