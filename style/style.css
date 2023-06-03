@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap");
 
-/* Cores do header */
+ Cores do header 
 :root {
-  --color-1: #FDE4FA;   /* roxinho ansiedade */
-  --color-2: #D3F7FF;  /*azulzinho HOME*/
-  --color-3: #DFF0D9; /*verdinho TDAH */
-  --color-4: #FFA85766; /*amarelinho exercicio*/
-  --color-5: #E9EAFA; /*azul depressão*/
-  --color-5: #F6F2D5; /*amarelo QUEM SOMOS*/
+  --color-1: #FDE4FA;    roxinho ansiedade 
+  --color-2: #D3F7FF;  azulzinho HOME
+  --color-3: #DFF0D9; verdinho TDAH 
+  --color-4: #FFA85766; amarelinho exercicio
+  --color-5: #E9EAFA; azul depressão
+  --color-5: #F6F2D5; amarelo QUEM SOMOS
 }
 
 
@@ -19,7 +19,7 @@ html {
 
 /* Menu burger */
 
-.menu-button {
+/* .menu-button {
   cursor: grab;
   display: flex;
   flex-direction: column;
@@ -35,11 +35,11 @@ html {
   height: 3px;
   background-color: #b98585;
   transition: background-color 0.5s ease-in-out;
-}
+} */
 
 /* mudando o hamburg
  */
-#menu-toggle:checked ~ .menu-button .bar:nth-child(2) {
+/* #menu-toggle:checked ~ .menu-button .bar:nth-child(2) {
   transform: scale(0);
 }
 
@@ -86,12 +86,12 @@ html {
 }
 #menu-toggle {
   display: none;
-}
+} */ 
 
 /* ///////// */
 
 
-.cadastro__header {
+/* .cadastro__header {
   color: #C7008F;
   background-color: var(--color-1);
   border-radius: 30px;
@@ -162,9 +162,9 @@ nav {
 
 .nav__main__depressao{
   background-color: var(--color-1);
-}
+} */
 
-body {
+/* body {
   font-size: 32px;
   font-family: "Helvetica", "Arial", sans-serif;
   text-align: center;
@@ -330,11 +330,11 @@ input {
 .flex-footer {
   display: flex;
   flex-direction: row;
-}
+} */
 
 
 /* Codigo das paginas principais */
-.artigos{
+/* .artigos{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -376,7 +376,7 @@ input {
   border-radius: 200px;
   overflow: hidden;
   box-shadow: 0 2px rgba(0, 0, 0, 0.204);
-}
+} */
 
 /* ----------------------------------------------------- */
 
