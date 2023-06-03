@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalmaMente</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/teste.css">
     <link rel="stylesheet" href="/style/respiracao.css">
     <script src="../script/script.js" defer></script>
 </head>
@@ -31,31 +32,36 @@
         </nav>
     </header>
     <main>
-        <div>
+        <div class="flex_center flex_column gap-32">
             <div class="main__ajuda">
                 <div>
                     <button class="tab" onclick="openTab(event, 'respiracao')">
-                        <img src="../img/respiracao.png" width="90" alt="imagem de uma pessoa respirando">
+                        <img src="../img/respiracao.png" class="no_shadow" width="20%" alt="imagem de uma pessoa respirando">
                         Exercício de Respiração
                     </button>
                 </div>
                 <div>
                     <button class="tab" onclick="openTab(event, 'cards')">
-                        <img src="../img/distracao.png"  width="90" alt="uma pessoa com cerebro confuso">
+                        <img src="../img/distracao.png" class="no_shadow"  width="20%" alt="uma pessoa com cerebro confuso">
                         Distraia a sua mente
                     </button>
                 </div>
             </div>
             <div id="respiracao" class="content">
-                <div class="main__respiracao">
-                    <h4>Mantenha a calma</h4>
-                    <div class="container">
-                        <div class="circulo"></div>
-                    </div>
-                    <div class="mensagem">Inspire</div>
-                    <button id="btn_respiracao" onclick="iniciarExercicio()">Iniciar</button>
+                <div class="m-3 flex_center flex_column">
+                    <button id="btn_respiracao" class="btn" onclick="modalBlock()">Iniciar</button>
                 </div>
-            
+            </div>
+
+            <div class="container__modal flex_center" id="ModalIDl"> 
+                <div class="modal">
+                    <button class="fechar">X</button>
+                    <!--colocar o conteudo do artigo aqui-->
+                    <h4>Mantenha a Calma</h4>
+                        <div class="circulo"></div>
+                        <div class="mensagem">Inspire</div>
+                    
+                </div>
             </div>
         
             <div id="cards" class="content">

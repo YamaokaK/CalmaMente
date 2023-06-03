@@ -18,7 +18,7 @@
 
   function iniciarExercicio() {
     var container = document.querySelector('.container');
-    var circulo = container.querySelector('.circulo');
+    var circulo = document.querySelector('.circulo');
     var mensagem = document.querySelector('.mensagem');
 
     var contador = 0;
@@ -43,7 +43,7 @@
 
             contador++;
             if (contador < totalVoltas) {
-              setTimeout(animarRespiracao, 2000); // Tempo de transição entre expiração e inspiração
+              setTimeout(animarRespiracao, 3000); // Tempo de transição entre expiração e inspiração
             }
           }, 5000); // Tempo de transição entre inspiração e retenção
         }, 2000); // Tempo de retenção da respiração
@@ -81,3 +81,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+function modalBlock() {
+  document.getElementById("ModalIDl").style.display="block";
+  setInterval(iniciarExercicio(), 100)
+}

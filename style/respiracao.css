@@ -1,46 +1,45 @@
-@import url(global.css);
-@import url(style.css);
+@import url(variaveis.css);
+/* @import url(style.css); */
 
 header {
-    color: var(--laranja-escuro);
-    background-color: var(--laranja-claro);
+    color: var(--dark-orange);
+    background-color: var(--light-orange);
 }
 
 nav button{
-    color: var(--laranja-escuro);
-    background-color: var(--laranja);
+    color: var(--dark-orange);
+    background-color: var(--orange);
 }
 
 nav h1 {
-    color: varvar(--laranja);
+    color: var(--dark-orange);
 }
 
 .bar {
-    background-color: var(--laranja);
+    background-color: var(--dark-orange);
 }
 
 #btn_respiracao {
+    padding: 16px 48px;
     height: auto;
-    padding: 20px;
-    font-size: 24px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
     box-shadow: var(--drop-shadow);
-    background-color: var(--laranja);
-    color: var(--yellow);
+    background-color: var(--orange);
+    color: var(--dark-orange);
 }
 
 #btn_respiracao:hover {
-    color: var(--laranja);
-    background-color: var(--yellow);
+    color: var(--yellow);
+    background-color: var(--dark-orange);
 }
 
 h4 {
-    color: var(--laranja);
+    color: var(--dark-orange);
 }
 
 .mensagem {
-    color: var(--laranja);
+    color: var(--dark-orange);
+}
+
+.footer {
+    background-color: var(--light-orange);
 }

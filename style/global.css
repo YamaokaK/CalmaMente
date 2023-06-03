@@ -203,7 +203,8 @@ input {
 }
 
 .no_shadow {
-    box-shadow: none;
+    box-shadow: none !important;
+    border: none !important;
 }
 
 .container__modal {
@@ -310,8 +311,8 @@ input {
   box-shadow: var(--drop-shadow);
 }
 
-.textF {
-  margin: 8px;
+.m-3 {
+  margin: 24px;
 }
 
 .flex-footer {
