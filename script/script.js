@@ -86,3 +86,17 @@ function modalBlock() {
   document.getElementById("ModalIDl").style.display="block";
   setInterval(iniciarExercicio(), 100)
 }
+
+// Função para abrir o modal
+function openModal() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "block";
+}
+
+// Função para fechar o modal
+function closeModal() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+// Ad

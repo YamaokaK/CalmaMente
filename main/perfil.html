@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CalmaMente</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>  
+            <img src="../img/logo1.png" width="100" alt="logo">
+            <input type="checkbox" id="menu-toggle">
+            <h1>Perfil</h1>
+            <label for="menu-toggle" class="menu-button">   
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ansiedade.html">Ansiedade</a></li>
+                <li><a href="main1.html">Depressão</a></li>
+                <li><a href="tdah.html">TDAH</a></li>
+                <li><a href="#">Contate-nos</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <div class="flex_center">
+        <figure>
+            <img src="/img/perfil-de-usuario.png" width="400" alt="cuidando-se">
+            <img src="/img/editar.png" id="lapis" width="100" alt="lapis azuld e editar foto">
+        </figure>
+        <form>
+            <input type="text" name="text" id="nome__login" placeholder="Nome">
+            <input type="email" name="emal" id="emsil__login" placeholder="Email">
+            <input type="tel" name="celular" id="cel__cadastro" placeholder="Celular">
+            <input type="password" name="password" id="pwd__cadastro" placeholder="Senha">
+            <button class="btn w-200" id="btn_login">Salvar</button> 
+        </form>
+        </div>
+    </main>
+    <footer class="footer"> 
+        <h2 class="textContact">Contate-nos!</h2>
+        <div class="flex-footer">
+            <h3 class="m-3"><a href="">Instagram</a></h3>
+            <h3 class="m-3"><a href="">Facebook</a></h3>
+            <h3 class="m-3"><a href="">Twitter</a></h3>
+        </div>
+    </footer>   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Usuario1</h3>
+            <h3>emailusuario1@email.com</h3>
+            <h3>telefone (15)99999-9999</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ex mollitia eaque dolor veniam autem natus commodi voluptatem non. 
+                Vel asperiores, eius impedit cupiditate unde sequi ipsam debitis quis dolores. 
+                Esse É O FIM.</P>
+            <button class="btn">Logout</button>
+            <img src="/img/editar.png" id="lapis" width="100" alt="lapis azuld e editar foto">
+        </div>
+    </div>
+</body>
+</html>
