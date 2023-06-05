@@ -319,3 +319,13 @@ input {
   display: flex;
   flex-direction: row;
 }
+
+.conteudoModalQuemsomos {
+    font-size: 20px;
+    max-height: 80vh;
+    overflow-y: scroll;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+
+}

@@ -100,3 +100,43 @@ window.addEventListener('DOMContentLoaded', () => {
       modal.classList.remove('active');
   });
 });
+
+
+// modal - Página Quem somos
+
+var modal = document.getElementById("ModalQuemsomos");
+// Botão que solicita abertura do modal
+var artigos = document.getElementsByClassName("btn w-300 missao");
+// Botão para fechar o modal
+var btn = document.querySelector(".fechar");
+// When the user clicks on an artigo, open the modal
+for (var i = 0; i < artigos.length; i++) {
+  artigos[i].onclick = function() {
+    modal.style.display = "block";
+  };
+}
+// Para fechar o modal ao clicar no botão
+btn.onclick = function() {
+  modal.style.display = "none";
+};
+// Para fechar o modal quando clicar fora do mesmo
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+//Função para bloqueio do modal
+function modalBlock() {
+  document.getElementById("ModalQuemsomos").style.display="block";
+  setInterval(iniciarExercicio(), 100)
+}
+// Função para abrir o modal
+function openModal() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "block";
+}
+// Função para fechar o modal
+function closeModal() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
