@@ -82,21 +82,16 @@ window.onclick = function(event) {
   }
 };
 
-function modalBlock() {
-  document.getElementById("ModalIDl").style.display="block";
-  setInterval(iniciarExercicio(), 100)
-}
+window.addEventListener('DOMContentLoaded', () => {
+  const lapisIcon = document.getElementById('lapis');
+  const modal = document.getElementById('modal');
+  const closeModal = document.getElementById('modal-close');
 
-// Função para abrir o modal
-function openModal() {
-  const modal = document.getElementById("modal");
-  modal.style.display = "block";
-}
+  lapisIcon.addEventListener('click', () => {
+      modal.classList.add('active');
+  });
 
-// Função para fechar o modal
-function closeModal() {
-  const modal = document.getElementById("modal");
-  modal.style.display = "none";
-}
-
-// Ad
+  closeModal.addEventListener('click', () => {
+      modal.classList.remove('active');
+  });
+});

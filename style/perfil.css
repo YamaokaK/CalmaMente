@@ -29,9 +29,33 @@ nav h1 {
 
 #lapis {
     border: none;
+    border-radius: 50px;    
     cursor: pointer;
 }
 
 .footer {
     background-color: var(--light-blue);
+}
+
+.modal-content {
+    display: flex;
+    align-items:baseline;
+    justify-content:start;
+
+}
+
+.modal-content h3 {
+    color: var(--grey-text);
+}
+
+.modal-content button {
+    color: white;
+    background-color: var(--dark-red);
+    float: left;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.modal-content img#lapis {
+    float: right;
 }
