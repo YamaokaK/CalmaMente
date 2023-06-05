@@ -32,10 +32,10 @@
         </nav>
     </header>
     <main>
-        <div class="flex_center flex_column gap-32">
+        <div class="flex_center flex_column">
             <div class="main__ajuda">
                 <div>
-                    <button class="tab" onclick="openTab(event, 'respiracao')">
+                    <button class="tab" onclick="openTab(event, 'respiracao'), modalBlock()">
                         <img src="../img/respiracao.png" class="no_shadow" width="20%" alt="imagem de uma pessoa respirando">
                         Exercício de Respiração
                     </button>
@@ -47,17 +47,13 @@
                     </button>
                 </div>
             </div>
-            <div id="respiracao" class="content">
-                <div class="m-3 flex_center flex_column">
-                    <button id="btn_respiracao" class="btn" onclick="modalBlock()">Iniciar</button>
-                </div>
-            </div>
+            <div id="respiracao"></div>
 
             <div class="container__modal flex_center" id="ModalIDl"> 
                 <div class="modal">
                     <button class="fechar">X</button>
                     <!--colocar o conteudo do artigo aqui-->
-                    <h4>Mantenha a Calma</h4>
+                        <h4>Mantenha a Calma</h4>
                         <div class="circulo"></div>
                         <div class="mensagem">Inspire</div>
                     
@@ -66,16 +62,31 @@
         
             <div id="cards" class="content">
             <!-- Conteúdo da sessão de cards -->
-            <div class="card">
-                <img src="imagem1.jpg" alt="Imagem 1">
-                <h3>Título do Card 1</h3>
-                <p>Descrição do Card 1</p>
-            </div>
-            <div class="card">
-                <img src="imagem2.jpg" alt="Imagem 2">
-                <h3>Título do Card 2</h3>
-                <p>Descrição do Card 2</p>
-            </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>5 coisas que você pode ver...</p>
+                    <img src="../img/lupa.png" alt="Imagem 1" width="20%" class="no_shadow">
+                </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>4 coisas que você pode ouvir...</p>
+                    <img src="../img/orelha.png" width="20%" alt="Imagem 2" class="no_shadow">
+                </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>3 coisas que você pode tocar...</p>
+                    <img src="../img/mao.png" alt="Imagem 2" width="20%" class="no_shadow">
+                </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>2 coisas que você pode sentir o cheiro...</p>
+                    <img src="../img/nariz.png" alt="Imagem 2" width="20%" class="no_shadow">
+                </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>1 coisa que você pode sentir o gosto...</p>
+                    <img src="../img/lingua.png" alt="Imagem 2" width="20%" class="no_shadow">
+                </div>
             <!-- Adicione mais cards conforme necessário -->
             </div>
         </div>
