@@ -82,6 +82,11 @@ window.onclick = function(event) {
   }
 };
 
+function modalBlock() {
+  document.getElementById("ModalIDl").style.display="block";
+  setInterval(iniciarExercicio(), 100)
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   const lapisIcon = document.getElementById('lapis');
   const modal = document.getElementById('modal');
