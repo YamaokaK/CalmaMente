@@ -11,7 +11,8 @@
         <meta name="language" content="pt">
         <link rel="stylesheet" href="/style/global.css">
         <link rel="stylesheet" href="/style/ansiedade.css">
-        <script src="/script/script.js" defer></script>
+        <script src="/script/infoDatas.js" defer></script>
+        <script src="/script/modal.js" defer></script>
     </head>
 <body>
     <header>
@@ -39,7 +40,7 @@
     <main>
         <a href="respiracao.html"><button class="botao__ajuda">Precisa de Ajuda?</button></a>
         <div class="artigos">
-            <div class="informacao">
+            <div class="informacao" onclick="modalInfo('ansiedade')">
                 <h2>O que é Ansiedade?</h2>
                 <p>Clique aqui e leia um breve texto sobre o assunto.</p>
             </div>
@@ -69,39 +70,9 @@
         <div class="modal">
             <button class="fechar">X</button>
             <!--colocar o conteudo do artigo aqui-->
-            <h3>O que é Ansiedade?</h3>
+            <h3 id="title"></h3>
             <div class="conteudo">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, cupiditate blanditiis aliquid commodi explicabo 
-                    quae quod libero nulla dicta exercitationem neque omnis, 
-                    velit minima delectus architecto non labore eos odit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, cupiditate blanditiis aliquid commodi explicabo 
-                    quae quod libero nulla dicta exercitationem neque omnis, 
-                    velit minima delectus architecto non labore eos odit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, cupiditate blanditiis aliquid commodi explicabo 
-                    quae quod libero nulla dicta exercitationem neque omnis, 
-                    velit minima delectus architecto non labore eos odit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, cupiditate blanditiis aliquid commodi explicabo 
-                    quae quod libero nulla dicta exercitationem neque omnis, 
-                    velit minima delectus architecto non labore eos odit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, cupiditate blanditiis aliquid commodi explicabo 
-                    quae quod libero nulla dicta exercitationem neque omnis, 
-                    velit minima delectus architecto non labore eos odit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, cupiditate blanditiis aliquid commodi explicabo 
-                    quae quod libero nulla dicta exercitationem neque omnis, 
-                    velit minima delectus architecto non labore eos odit?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, cupiditate blanditiis aliquid commodi explicabo 
-                    quae quod libero nulla dicta exercitationem neque omnis, 
-                    velit minima delectus architecto non labore eos odit?
-                    FIMDOTEXTO.
-                </p>
+               <span id="txt"></span>
             </div>
         </div>
     </div>
