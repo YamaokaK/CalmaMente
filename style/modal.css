@@ -1,0 +1,56 @@
+@import url(variaveis.css);
+
+#txt {
+    color: #222222;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.container__modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* background-color: rgba(226, 217, 226, 0.5); = figma*/ 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    margin: 0;
+    display: none;
+}
+
+.modal {
+    background: #FAFAFA;
+    width: 60%;
+    height: 60vh;
+    min-width: 300px;
+    max-height: 80vh; /* Defina uma altura máxima para o modal */
+    padding: 40px;
+    border: none;
+    border-radius: 36px;
+    box-shadow: var(--drop-shadow);
+    position: relative;
+    overflow: hidden;
+    margin: 85px auto;
+}
+
+.conteudo {
+    max-height: 34vh;
+    overflow-y: scroll;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.fechar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    font-size: 2em  ;
+    background-color: transparent;
+    color: #ff0000;
+    cursor: pointer;
+}

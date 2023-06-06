@@ -11,7 +11,8 @@
         <meta name="language" content="pt">
         <link rel="stylesheet" href="/style/global.css">
         <link rel="stylesheet" href="/style/ansiedade.css">
-        <script src="/script/infoDatas.js" defer></script>
+        <link rel="stylesheet" href="/style/modal.css">
+        <script src="/script/infos/ansiedade.js" defer></script>
         <script src="/script/modal.js" defer></script>
     </head>
 <body>
@@ -40,18 +41,18 @@
     <main>
         <a href="respiracao.html"><button class="botao__ajuda">Precisa de Ajuda?</button></a>
         <div class="artigos">
-            <div class="informacao" onclick="modalInfo('ansiedade')">
+            <div class="informacao" onclick="modalInfo()">
                 <h2>O que é Ansiedade?</h2>
                 <p>Clique aqui e leia um breve texto sobre o assunto.</p>
             </div>
             <div class="flex_center flex_column gap-32">
-                <div class="topicos__artigos">
+                <div class="topicos__artigos" onclick="modalArtic(1)">
                     <h4>Artigo 1</h4>
                 </div>
-                <div class="topicos__artigos">
+                <div class="topicos__artigos" onclick="modalArtic(2)">
                     <h4>Artigo 2</h4>
                 </div>
-                <div class="topicos__artigos">
+                <div class="topicos__artigos" onclick="modalArtic(3)">
                     <h4>Artigo 3</h4>
                 </div>
             </div>
