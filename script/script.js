@@ -52,55 +52,6 @@
 
     animarRespiracao();
   }
-  
-// modal
-
-var modal = document.getElementById("ModalIDl");
-
-// Get the buttons that open the modal
-var artigos = document.getElementsByClassName("topicos__artigos");
-
-// Get the <button> element that closes the modal
-var btn = document.querySelector(".fechar");
-
-// When the user clicks on an artigo, open the modal
-for (var i = 0; i < artigos.length; i++) {
-  artigos[i].onclick = function() {
-    modal.style.display = "block";
-  };
-}
-
-// When the user clicks on the button (x), close the modal
-btn.onclick = function() {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
-function modalBlock() {
-  document.getElementById("ModalIDl").style.display="block";
-  setInterval(iniciarExercicio(), 100)
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  const lapisIcon = document.getElementById('lapis');
-  const modal = document.getElementById('modal');
-  const closeModal = document.getElementById('modal-close');
-
-  lapisIcon.addEventListener('click', () => {
-      modal.classList.add('active');
-  });
-
-  closeModal.addEventListener('click', () => {
-      modal.classList.remove('active');
-  });
-});
-
 
 // modal - Página Quem somos
 
@@ -116,9 +67,7 @@ for (var i = 0; i < artigos.length; i++) {
   };
 }
 // Para fechar o modal ao clicar no botão
-btn.onclick = function() {
-  modal.style.display = "none";
-};
+
 // Para fechar o modal quando clicar fora do mesmo
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -126,10 +75,7 @@ window.onclick = function(event) {
   }
 };
 //Função para bloqueio do modal
-function modalBlock() {
-  document.getElementById("ModalQuemsomos").style.display="block";
-  setInterval(iniciarExercicio(), 100)
-}
+
 // Função para abrir o modal
 function openModal() {
   const modal = document.getElementById("modal");
