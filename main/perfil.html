@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - CalmaMente</title>
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/login.css">
     <link rel="stylesheet" href="../style/perfil.css">
     <link rel="stylesheet" href="../style/modal.css">
     <script src="../script/modal.js" defer></script>
@@ -34,9 +33,12 @@
     </header>
     <main>
         <div class="flex_center">
-        <figure>
-            <img src="/img/perfil-de-usuario.png" width="400" alt="meu perfil">
-            <img src="/img/editar.png" id="lapis" width="50" alt="lapis azul e editar foto" onclick="modalInfo()">
+            <figure class="flex_center flex_column">
+                <img src="/img/perfil-de-usuario.png" width="400" alt="meu perfil">
+                <div  class="flex_center flex_row">
+                    <img src="/img/editar.png" id="lapis" width="50" alt="lapis azul e editar foto" onclick="modalInfo()">
+                    <button class="btn logout">Logout</button>
+                </div>
         </figure>
         <form>
             <input type="text" name="text" id="nome__login" placeholder="Nome">
@@ -62,8 +64,6 @@
             <h3 id="title"></h3>
             <div class="conteudo">
                 <span id="txt"></span>            
-                <button class="btn">Logout</button>
-                <img src="/img/editar.png" id="lapis" width="50" alt="lapis azuld e editar foto">
             </div>
         </div>
     </div>
