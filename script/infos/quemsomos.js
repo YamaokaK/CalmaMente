@@ -22,7 +22,7 @@ const contentPageInfo = {
         {
             id: 4,
             title: "Equipe",
-            text: "Estudantes da Fatec Votorantim"
+            text: "Estudantes de desenvolvimento de software multiplataforma da Fatec Votorantim, com o objetivo de fornecer a comunidade uma plataforma que possa auxiliar pessoas que sofrem de transtornos psicológicos e oferecer suporte em momentos de dificuldade."
         }
     ]    
 }
