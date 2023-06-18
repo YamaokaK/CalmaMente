@@ -272,6 +272,13 @@ input {
   flex-direction: row;
 }
 
+.footer__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .conteudoModalQuemsomos {
     font-size: 20px;
     max-height: 80vh;
