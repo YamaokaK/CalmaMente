@@ -48,7 +48,7 @@ nav {
 nav h1 {
     align-self: center;
     margin: 0 auto;
-    margin-left: 555px;
+    margin-left: 33%;
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -270,6 +270,13 @@ input {
 .flex-footer {
   display: flex;
   flex-direction: row;
+}
+
+.footer__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudoModalQuemsomos {

@@ -49,11 +49,14 @@ nav h1 {
 }
 
 .modal-content button {
-    color: white;
-    background-color: var(--dark-red);
     float: left;
     margin-left: auto;
     margin-bottom: auto;
+}
+
+.logout {
+    color: white;
+    background-color: var(--dark-red);
 }
 
 .modal-content img#lapis {
