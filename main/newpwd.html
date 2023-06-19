@@ -7,6 +7,8 @@
     <title>Nova Senha - CalmaMente</title>
     <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="../style/newpwd.css">
+    <link rel="stylesheet" href="../style/modal.css">
+    <script src="../script/modal.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,14 +33,16 @@
     </header>
     <main>
         <div class="flex_center">
-        <figure>
-            <img src="/img/newpwd__img.png" width="400" alt="interrgoções">
-        </figure>
-        <form>
-            <input type="email" name="email" id="email__login" placeholder="Email">
-            <input type="password" name="password" id="newpwd__login" placeholder="Nova Senha">
-            <button class="btn w-200" id="btn_newpwd">Redefinir</button>
-        </form>
+            <figure>
+                <img src="/img/newpwd__img.png" width="400" alt="interrgoções">
+            </figure>
+            <div class="flex_center flex_column gap-32">
+                <form>
+                    <input type="email" name="email" id="email__login" placeholder="Email">
+                    <input type="password" name="password" id="newpwd__login" placeholder="Nova Senha">
+                </form>
+                <button class="btn w-200" id="btn_newpwd" onclick="modalConfirm()">Redefinir</button>
+            </div>
        
         </div>
     </main>
@@ -59,6 +63,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="container__modal flex_center" id="ModalIDl"> 
+        <div class="modal">
+            <a href="login.html"><button class="fechar">X</button></a>
+            <!--colocar o conteudo do artigo aqui-->
+            <img src="../img/verificar.png" width="30%" alt="" class="no_shadow">
+            <div class="conteudo txt-center">
+               <span id="">Senha alterada com sucesso!!</span>
+            </div>
+        </div>
+    </div>
+
 
     
 </body>

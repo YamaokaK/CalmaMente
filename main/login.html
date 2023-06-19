@@ -7,6 +7,8 @@
     <title>Login - CalmaMente</title>
     <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/modal.css">
+    <script src="../script/modal.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,16 +35,20 @@
     </header>
     <main>
         <div class="flex_center">
-        <figure>
-            <img src="/img/login__img.jpeg" width="400" alt="cuidando-se">
-        </figure>
-        <form>
-            <input type="email" name="email" id="email__login" placeholder="Email">
-            <input type="password" name="password" id="pwd__login" placeholder="Senha">
-            <a href="perfil.html"><button class="btn w-200" id="btn_login">Login</a></button>
-            <a href="cadastro.html"><small>Cadastre-se</small></a>
-            <a href="newpwd.html"><small>Esqueceu a senha? Clique Aqui</small></a>
-        </form>
+            <figure>
+                <img src="/img/login__img.jpeg" width="400" alt="cuidando-se">
+            </figure>
+            <div class="flex_center flex_column gap-32">
+                <form>
+                    <input type="email" name="email" id="email__login" placeholder="Email">
+                    <input type="password" name="password" id="pwd__login" placeholder="Senha">
+                </form>
+                <div class="flex_center flex_column">
+                    <button class="btn w-200" id="btn_login" onclick="modalConfirm()">Login</button>
+                    <a href="cadastro.html"><small>Cadastre-se</small></a>
+                    <a href="newpwd.html"><small>Esqueceu a senha? Clique Aqui</small></a>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -62,6 +68,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="container__modal flex_center" id="ModalIDl"> 
+        <div class="modal">
+            <a href="index.html"><button class="fechar">X</button></a>
+            <!--colocar o conteudo do artigo aqui-->
+            <img src="../img/verificar.png" alt="" width="30%" class="no_shadow">
+            <div class="conteudo txt-center">
+               <span id="">Você logou com sucesso!!</span>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

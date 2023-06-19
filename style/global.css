@@ -267,6 +267,10 @@ input {
   margin: 24px;
 }
 
+.txt-center {
+    text-align: center !important; 
+}
+
 .flex-footer {
   display: flex;
   flex-direction: row;
