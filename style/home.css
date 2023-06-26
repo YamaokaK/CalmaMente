@@ -18,6 +18,7 @@ nav h1 {
 }
 
 .pag__inicial {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: center;
